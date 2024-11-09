@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Specbee Assignment</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Metrophobic&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <p class="text_dark fs_36 fs_sm_28 text_center mb_10 fw_700">
+          View our Featured Speakers for the Event
+        </p>
+        <p class="text_dark fs_18 fs_sm_13 text_center mt_0 fw_400">
+          Speakers are core contributors and industry thought leaders working at
+          <span class="text_primary">companies</span> that push for innovation.
+        </p>
+      </div>
+      <!-- Popup starts -->
+      <div id="popover" class="popover shadow my_10">
+        <div class="popover-content">
+        <img id="close-popover" class="close-btn" alt="close_icon" />
+
+          <div class="popup-container">
+            <div class="popup-left-content">
+              <img class="popover_img" src="https://www.reactindia.io/_next/image?url=https%3A%2F%2Fmedia.graphassets.com%2FnVe3lApIQB6x7Lu3JI0v&w=256&q=100"/>
+              <div>
+                <h2 id="popover-name" class="text_center fw_700 text_dark mt_0 fs_24"></h2>
+                <p id="popover-role" class="mb_0 text_center fw_600 text_dark fs_18 fs_xsm_17"></p>
+                <p id="popover-company" class="mt_0 text_center fw_400 fs_16 text_secondary"></p>
+                <div>
+                    <img id="social1" class="me_3 cursor-pointer" alt="social1"/>
+                    <img id="social2" class="me_3 cursor-pointer" alt="social2" />
+                    <img id="social3" class="me_3 cursor-pointer" alt="social3" />
+                </div>
+              </div>
+            </div>
+            <div class="px_5">
+                <p id="popover-description" class="fs_xxsm_14"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Popup ends -->
+
+      <!-- Cards starts here-->
+      <div class="speaker-container" id="speaker-container">
+      </div>
+      <!-- Cards ends here-->
+
+      <div class="w_25 w_sm_50">
+        <button class="bg_primary text_white fw_400 fs_18 w_100">
+          See the Program
+        </button>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
